@@ -42,7 +42,7 @@ const todoList = [{
           <TodoContent>
             <Tittle>DashBoard</Tittle>
             <Greeting>Buenos dias, Hiram 🚀</Greeting>
-            <h3 style={{marginTop: '40px'}}>Elige una base de datos:</h3>
+            <h3 style={{marginTop: '40px', color:'#fff'}}>Elige una base de datos:</h3>
             <ButtonContainer>
             <Link style={{textDecoration:"none"}} to="/clientes"><Button style={{color: '#fd76a1'}}variant="outlined">Clientes</Button></Link>
             <Link style={{textDecoration:"none"}} to="/suplidores"><Button style={{color: '#70c4be'}} variant="outlined">Supplidores</Button></Link> 

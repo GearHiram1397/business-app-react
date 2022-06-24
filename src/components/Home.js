@@ -15,7 +15,7 @@ const Home = (props) => {
             Para asi puedes acceder a tus datos de manera facil segura y rapida.
           </h2>
         </SubTitle>
-        <Login><Link to={'/dashboard'} > Login </Link></Login>
+        <Login><Link style={{textDecoration: "none", color: "#fff"}} to={'/dashboard'} > Login </Link></Login>
       </Content>
     </Wrapper>
   )
@@ -45,6 +45,11 @@ const Title = styled.div`
   margin: 50px 0;
   font-size: 30px;
   font-weight: 700;
+ 
+
+  & > h1 {
+    color: #fff !important;
+  }
   `
 const SubTitle = styled.div`
   margin-bottom: 20px;
@@ -53,21 +58,29 @@ const SubTitle = styled.div`
   text-align: center;
   line-height: 2;
   letter-spacing: 0.5px;
-  width: 70%
+  width: 70%;
+    & > h2 {
+      color: #fff !important;
+    }
   `
 const Login = styled.button`
   margin-top: 20px;
   padding: 10px 20px;
   border-radius: 5px;
-  background-color: #18181f;
+  background-color: #2b5896;
   color: #eee;
+ 
+  font-size: 20px;
   font-size: 30px;
   font-weight: 700;
   border: none;
   cursor: pointer;
   transition: 0.3s;
+
+
+ 
   &:hover {
-      background-color: #eee;
+      background-color: #4e4396;
       color: #18181f;
       }
 `
