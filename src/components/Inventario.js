@@ -200,7 +200,7 @@ const [sideBarToogle, setSideBarToogle] = useState(false)
                   
                   return (
                     <tr key={index}>
-                      <td>{row.id}</td>
+                      <td>{row.number}</td>
                       <td>{row.articulo}</td>
                       <td>{row.cantidad}</td>
                       <td>{row.inventario}</td>

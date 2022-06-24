@@ -203,7 +203,7 @@ const [newRows, setNewRows] = useState([
                 newRows.map((row, index) => {
                   return (
                     <tr key={index}>
-                      <td>{row.id}</td>
+                      <td>{row.number}</td>
                       <td>{row.fullName}</td>
                       <td>{row.articulo}</td>
                       <td>{row.cantidad}</td>

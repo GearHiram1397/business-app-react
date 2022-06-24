@@ -149,32 +149,6 @@ function Collection() {
   }
 
 
-  const columns = [
-    { key:'1', dataIndex: 'id', title: 'ID'},
-  
-  {
-    key:'2', dataIndex: 'fullName', title: 'Full Name'
-    
-  },
-    {
-      key:'3', dataIndex: 'limite', title: 'Credito'
-    },
-    {
-      key:'4', dataIndex: 'direccion', title: 'Direccion'
-    },
-    {
-      key:'5', title: 'Actions', 
-      render: (record) => ( 
-      <>
-      <EditOutlined onClick={() => {editRow(record)}}/>
-      <DeleteOutlined onClick={() => {deleteRow(record)}}  style={
-        { color: 'red' , marginLeft: '10px'}
-      }/>
-      </>
-      )
-    }
-  ];
-
 
   // template literal
   
@@ -244,7 +218,7 @@ function Collection() {
                    
                    
                     <tr key={index}>
-                      <td>{row.id}</td>
+                      <td>{row.number}</td>
                       <td>{row.fullName}</td>
                       <td>{row.limite}</td>
                       <td>{row.direccion}</td>
